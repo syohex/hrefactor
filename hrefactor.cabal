@@ -1,0 +1,63 @@
+name: hrefactor
+version: 0.0.1
+cabal-version: >=1.10
+build-type: Simple
+license: MIT
+license-file: LICENSE.md
+maintainer: Tony Day <tonyday567@gmail.com>
+bug-reports: https://github.com/tonyday567/hrefactor/issues
+synopsis: Haskell project hrefactor repo 
+description: <https://github.com/tonyday567/hrefactor>
+extra-source-files:
+    README.md
+
+library
+    hs-source-dirs: library
+    exposed-modules:
+                    Hrefactor
+                  , Hrefactor.Refactoring
+                  , Hrefactor.Comments
+                  , Hrefactor.Types
+                  , Hrefactor.Styles.TonyDay
+                  , Hrefactor.Styles.Exact
+    build-depends:  base ==4.*
+                  , data-default
+                  , hindent
+                  , hlint
+                  , lens
+                  , pretty
+                  , haskell-src-exts
+                  , pretty-show
+                  , text
+                  , mtl
+                  , transformers   
+                            
+    default-language: Haskell2010
+    ghc-options: -Wall
+                     
+executable hrefactor
+    main-is: Main.hs
+    hs-source-dirs: executable
+    build-depends: base ==4.*
+                 , hrefactor -any
+                 , descriptive
+                 , ghc-prim
+                 , haskell-src-exts
+                 , text
+                 , applicative-quoters
+                 , hindent
+                 , data-default
+    default-language: Haskell2010
+    ghc-options: -Wall
+
+test-suite test
+    main-is: Test.hs
+    hs-source-dirs: testing
+    build-depends: base ==4.*
+                 , hrefactor -any
+                 , hspec
+                 , tasty
+                 , tasty-hspec
+                
+    default-language: Haskell2010
+    type: exitcode-stdio-1.0

@@ -1,35 +1,31 @@
 <h1 align="center">
-    <a href="https://github.com/tonyday567/starter">
-        Starter
+    <a href="https://github.com/tonyday567/hrefactor">
+        Haskell refactoring tools
     </a>
 </h1>
 
-<p align="center">
-    s/Starter/ProjectName/
-</p>
-
 <hr>
 
-Starter is a shell for a new haskell project.  It contains starter files for executables, library modules and hspec tests.
+hrefactor is an experiment with haskell refactoring.
 
 ## Install
 
 ``` sh
 $ cabal update
-$ cabal install starter
+$ cabal install hrefactor
 ```
 
 ## Use
 
 ``` sh
-$ dist/build/starter/starter
+$ dist/build/hrefactor/hrefactor
 ```
 
 ## Develop
 
 ``` sh
-$ git clone https://github.com/tonyday567/starter.hs
-$ cd starter
+$ git clone https://github.com/tonyday567/hrefactor.hs
+$ cd hrefactor
 
 $ cabal sandbox init
 $ cabal configure --enable-tests
@@ -38,3 +34,4 @@ $ cabal install --dependencies-only
 $ cabal build
 $ cabal test
 ```
+
