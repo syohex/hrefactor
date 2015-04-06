@@ -15,11 +15,7 @@ library
     hs-source-dirs: library
     exposed-modules:
                     Hrefactor
-                  , Hrefactor.Refactoring
-                  , Hrefactor.Comments
-                  , Hrefactor.Types
-                  , Hrefactor.Styles.TonyDay
-                  , Hrefactor.Styles.Exact
+                  , Hrefactor.Module
     build-depends:  base ==4.*
                   , data-default
                   , hindent

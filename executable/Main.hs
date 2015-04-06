@@ -24,7 +24,7 @@ import Language.Haskell.Exts.Annotated hiding (Style, style)
 import Paths_hrefactor (version)
 import System.Environment
 import Text.Read
-import Hrefactor (reformat', styles')
+import Hrefactor (reformat')
 
 -- | Main entry point.
 main :: IO ()
@@ -60,7 +60,7 @@ options =
                                        constant (styleName s)
                                                 (styleDescription s)
                                                 s)
-                                    styles'))
+                                    styles))
                        lineLen|]
         exts = 
           fmap getExtensions (many (prefix "X" "Language extension"))

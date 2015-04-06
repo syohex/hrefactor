@@ -7,6 +7,10 @@
   "refactor-"
   "prefix for refactor file")
 
+(defvar hrefactor-style
+  "tony-day"
+  "this should be refactored out")
+
 ;;;###autoload
 (defun hrefactor-all ()
   "reformat, then fix flychecks."
@@ -14,7 +18,9 @@
   (save-excursion
     (hrefactor-reformat-module)
     (flycheck-buffer)
-    (hrefactor-flycheck-fix-all)))
+    (hrefactor-flycheck-fix-all)
+    (haskell-navigate-imports)
+    (haskell-align-imports)))
 
 ;;;###autoload
 (defun hrefactor-reformat-module ()
