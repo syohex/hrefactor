@@ -54,6 +54,13 @@ test-suite test
                  , hspec
                  , tasty
                  , tasty-hspec
+                 , descriptive
+                 , ghc-prim
+                 , haskell-src-exts
+                 , text
+                 , applicative-quoters
+                 , hindent
+                 , data-default
                 
     default-language: Haskell2010
     type: exitcode-stdio-1.0
