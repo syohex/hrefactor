@@ -5,7 +5,7 @@ import qualified TestHrefactor
 
 -- the tests
 tests :: IO TestTree
-tests = 
+tests =
   testGroup "hrefactor" <$>
   sequence [testSpec "Hrefactor" =<<
             TestHrefactor.tests]

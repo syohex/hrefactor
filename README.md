@@ -8,20 +8,7 @@
 
 hrefactor is an experiment with haskell refactoring.
 
-## Install
-
-``` sh
-$ cabal update
-$ cabal install hrefactor
-```
-
-## Use
-
-``` sh
-$ dist/build/hrefactor/hrefactor
-```
-
-## Develop
+## Use & Develop
 
 ``` sh
 $ git clone https://github.com/tonyday567/hrefactor.hs
@@ -32,6 +19,10 @@ $ cabal configure --enable-tests
 $ cabal install --dependencies-only --dry-run
 $ cabal install --dependencies-only
 $ cabal build
-$ cabal test
 ```
+
+- put dist/build/hrefactor/hrefactor on the path
+- put elisp/hrefactor.el where emacs can find it
+
+try out `hrefactor-all`.
 
