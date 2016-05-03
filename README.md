@@ -8,6 +8,13 @@
 
 hrefactor is an experiment with haskell refactoring.
 
+The opinionated refactor amounts to:
+- applying (some) warnings coming from haskell-flycheck - ghc & hlint on my config
+- clean up imports
+- clean up pragmas
+- apply consistent separators
+- apply a style from hindent
+
 ## Use & Develop
 
 ``` sh
