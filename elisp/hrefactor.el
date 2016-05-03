@@ -105,7 +105,7 @@
   "fix err, moving point past the fixed code, if any"
   (let* ((msg (flycheck-error-message err))
          (spot (flycheck-error-line err)))
-    (cond ((string-match (haskell-ext-flycheck-typemessage-re) msg)
+    (cond ((string-match (hrefactor-flycheck-typemessage-re) msg)
            (with-current-buffer buf
              (insert
               (hrefactor-flycheck-clean-sig

@@ -12,7 +12,7 @@ extra-source-files:
     README.md
 
 library
-    hs-source-dirs: library
+    hs-source-dirs: src
     exposed-modules:
                     Hrefactor
                   , Hrefactor.Module
@@ -33,7 +33,7 @@ library
                      
 executable hrefactor
     main-is: Main.hs
-    hs-source-dirs: executable
+    hs-source-dirs: app
     build-depends: base ==4.*
                  , hrefactor -any
                  , descriptive
@@ -48,7 +48,7 @@ executable hrefactor
 
 test-suite test
     main-is: Test.hs
-    hs-source-dirs: testing
+    hs-source-dirs: test
     build-depends: base ==4.*
                  , hrefactor -any
                  , hspec
